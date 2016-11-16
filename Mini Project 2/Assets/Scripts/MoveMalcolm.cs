@@ -34,8 +34,9 @@ public class MoveMalcolm : MonoBehaviour {
 	}
 		
 	void OnCollisionEnter (Collision c) {
-		if (c.gameObject.CompareTag ("Object")) {
+//		if (c.gameObject.CompareTag ("Object")) {
+			moveBehaviour = 0;
 			anim.Play("Idle");
-		}
+//		}
 	}
 }
